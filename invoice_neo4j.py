@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-from invoice_data.dataToNeo4jClass.DataToNeo4jClass import DataToNeo4j
+from dataToNeo4jClass.DataToNeo4jClass import DataToNeo4j
 import os
 import pandas as pd
 
 
 # 提取excel表格中数据，将其转换成dateframe类型
-os.chdir('xxxx')
+os.chdir(os.getcwd())
 
-invoice_data = pd.read_excel('./Invoice_data_Demo.xls', header=0, encoding='utf8')
+invoice_data = pd.read_excel('./Invoice_data_Demo.xlsx', header=0, encoding='utf8')
 print(invoice_data)
 
 
