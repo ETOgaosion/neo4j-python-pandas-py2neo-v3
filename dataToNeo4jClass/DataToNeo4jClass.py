@@ -6,7 +6,7 @@ class DataToNeo4j(object):
 
     def __init__(self):
         """建立连接"""
-        link = Graph("bolt://localhost:7687", auth=("neo4j", "password"))
+        link = Graph("bolt://localhost:7687", auth=("neo4j", "12345678"))
         self.graph = link
         # 定义label
         self.invoice_name = '发票名称'

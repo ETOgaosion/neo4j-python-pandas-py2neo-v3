@@ -67,9 +67,9 @@ def relation_extraction():
 
 
 # 实例化对象
-data_extraction()
-relation_extraction()
-create_data = DataToNeo4j()
+data_extraction_res = data_extraction()
+relation_extraction_res = relation_extraction()
 
-create_data.create_node(data_extraction()[0], data_extraction()[1])
-create_data.create_relation(relation_extraction())
+create_data = DataToNeo4j()
+create_data.create_node(data_extraction_res[0], data_extraction_res[1])
+create_data.create_relation(relation_extraction_res)

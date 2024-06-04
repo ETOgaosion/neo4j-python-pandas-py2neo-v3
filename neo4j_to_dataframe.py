@@ -9,7 +9,7 @@ class Neo4jToJson(object):
     """知识图谱数据接口"""
 
     # 与neo4j服务器建立连接
-    graph = Graph("bolt://localhost:7687", auth=("neo4j", "password"))
+    graph = Graph("bolt://localhost:7687", auth=("neo4j", "12345678"))
     links = []
     nodes = []
 

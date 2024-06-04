@@ -11,6 +11,7 @@
 - [Miniconda](https://docs.anaconda.com/free/miniconda/): `conda create -n Neo4jPy python=3.6 && conda activate Neo4jPy`
 - python 3.6.5
 - windows10/Ubuntu
+- Neo4j取消登陆认证
 
 具体包依赖可以参考文件`requirements.txt`
 
